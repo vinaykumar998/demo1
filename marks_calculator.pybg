@@ -1,0 +1,20 @@
+
+name = input("Enter student name: ")
+
+mark1 = float(input("Enter marks in Subject 1 (out of 100): "))
+mark2 = float(input("Enter marks in Subject 2 (out of 100): "))
+mark3 = float(input("Enter marks in Subject 3 (out of 100): "))
+
+total = mark1 + mark2 + mark3
+average = total / 3
+percentage = (total / 300) * 100
+
+print("\n--- Student Marks Report ---")
+print("Student Name:", name)
+print("Total Marks:", total, "/ 300")
+print("Average Marks:", round(average, 2))
+print("Percentage:", round(percentage, 2), "%")
+
+if mark1 >= 35 and mark2 >= 35 and mark3 >= 35:
+    print("Result: PASS")
+else:
