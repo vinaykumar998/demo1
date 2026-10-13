@@ -18,3 +18,4 @@ if mark1 >= 35 and mark2 >= 35 and mark3 >= 35:
     print("Result: PASS")
 else:
     print("Result: FAIL")
+    
