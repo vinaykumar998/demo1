@@ -1,19 +1,16 @@
-import pandas as pd
 
-data = (
+# Simple Calculator
 
-"Study_Hours": [2, 5, 4, 7, 3],
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
-"Attendance": [60, 80, 75, 90, 65),
+print("\n--- Simple Calculator ---")
+print("Addition:", num1 + num2)
+print("Subtraction:", num1 - num2)
+print("Multiplication:", num1 * num2)
 
-"Study_Mode": ["Online", "Classroom", "Online", "Classroom", "Online"], "Marks": [45, 70, None, 90, 55]
+if num2 != 0:
+    print("Division:", num1 / num2)
+else:
+    print("Division: Cannot divide by zero!")
 
-df = pd.DataFrame(data)
-
-print("Original dataset:")
-
-print(df)
-
-df["Marks"] = df["Marks"].fillna(df["Marks"].median()) df = pd.get_dummies(df, columns=["Study_Mode"], dtype=int) print("Prepared dataset:")
-
-print(df)
